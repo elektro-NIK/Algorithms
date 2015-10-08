@@ -57,6 +57,16 @@ def GausHaleckiy(A, B):
       S += D[i][k] * X[len(A)-1-k]
     X.append(Y[i] - S)
   X.reverse()
-  return X
+  Output(X)
+  return 0
 
-print GausHaleckiy(InputA(), InputB())
+def Output(X):
+  print 'Результат:'
+  for i in range(len(X)):
+    print 'X' + str(i+1) + ' = ' + '%.4f' % X[i]
+  return 0
+
+print "-" * 83
+print 'Програма розв’язку системи рівнянь методом Гауса-Халецького.'
+print "-" * 83
+GausHaleckiy(InputA(), InputB())

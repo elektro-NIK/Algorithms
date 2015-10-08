@@ -22,6 +22,12 @@ def InputB():
     B[i] = float(B[i])
   return B
 
+def Output(X):
+  print 'Результат:'
+  for i in range(len(X)):
+    print 'X' + str(i+1) + ' = ' + '%.4f' % X[i]
+  return 0
+
 def AttachMatrixs(A,B):
   C = []
   for i in range(len(A)):
@@ -59,9 +65,13 @@ def ReverseCourse(C):
     for k in range(len(X)):
       B += X[k]*C[i][len(C)-1-k]
     X.append((C[i][len(C)] - B) / C[i][i])
+  X.reverse()
   return X
 
 def ConsistentExeptions():
-  return ReverseCourse(NormalCourse(AttachMatrixs(InputA(), InputB())))
+  print "-" * 83
+  print 'Програма розв’язку системи рівнянь методом Гауса з послідовним виключенням змінних.'
+  print "-" * 83
+  Output(ReverseCourse(NormalCourse(AttachMatrixs(InputA(), InputB()))))
 
-print ConsistentExeptions()
+ConsistentExeptions()

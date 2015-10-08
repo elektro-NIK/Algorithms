@@ -66,7 +66,15 @@ def ReverseCourse(C):
   X.reverse()
   return X
 
-def SingleFactors():
-  return ReverseCourse(NormalCourse(AttachMatrixs(InputA(), InputB())))
+def Output(X):
+  for i in range(len(X)):
+    print 'X' + str(i+1) + ' = ' + '%.4f' % X[i]
+  return 0
 
+def SingleFactors():
+  Output(ReverseCourse(NormalCourse(AttachMatrixs(InputA(), InputB()))))
+
+print "-" * 83
+print 'Програма розв’язку системи рівнянь методом Гауса з одиночними коефіцієнтами.'
+print "-" * 83
 SingleFactors()

@@ -81,4 +81,12 @@ def MainElement(C):
   X = X[:q] + [(C[p][len(C[p])-1]-S)/C[p][q]] + X[q+1:]
   return X
 
-print MainElement(AttachMatrixs(InputA(), InputB()))
+def Output(X):
+  for i in range(len(X)):
+    print 'X' + str(i+1) + ' = ' + '%.4f' % X[i]
+  return 0
+
+print "-" * 83
+print 'Програма розв’язку системи рівнянь методом Гауса з вибором головного елемента.'
+print "-" * 83
+Output(MainElement(AttachMatrixs(InputA(), InputB())))

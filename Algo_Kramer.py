@@ -64,4 +64,12 @@ def Cramer():
     X.append(D[i]/det)
   return X
 
-print Cramer()
+def Output(X):
+  for i in range(len(X)):
+    print 'X' + str(i+1) + ' = ' + '%.4f' % X[i]
+  return 0
+
+print "-" * 83
+print 'Програма розв’язку системи рівнянь методом Крамера.'
+print "-" * 83
+Output(Cramer())

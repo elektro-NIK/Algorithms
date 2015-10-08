@@ -62,7 +62,16 @@ def ReverseCourse(C):
     X.append(C[i][len(C)])
   return X
 
-def GausJordan():
-  return ReverseCourse(NormalCourse(AttachMatrixs(InputA(), InputB())))
+def Output(X):
+  for i in range(len(X)):
+    print 'X' + str(i+1) + ' = ' + '%.4f' % X[i]
+  return 0
 
-print GausJordan()
+def GausJordan():
+  print "-" * 83
+  print 'Програма розв’язку системи рівнянь методом Гауса-Жордана.'
+  print "-" * 83
+  Output(ReverseCourse(NormalCourse(AttachMatrixs(InputA(), InputB()))))
+  return 0
+
+GausJordan()
