@@ -1,6 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+import sys
+
 def InputA():
   order = int(raw_input('Введіть порядок матриці: '))
   print "Матриця:"
