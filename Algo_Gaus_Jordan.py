@@ -70,6 +70,7 @@ def Output(X):
 def GausJordan():
   print "-" * 83
   print 'Програма розв’язку системи рівнянь методом Гауса-Жордана.'
+  print 'Автор - Богдан Калінін'
   print "-" * 83
   Output(ReverseCourse(NormalCourse(AttachMatrixs(InputA(), InputB()))))
   return 0

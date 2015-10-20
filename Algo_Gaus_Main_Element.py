@@ -88,5 +88,6 @@ def Output(X):
 
 print "-" * 83
 print 'Програма розв’язку системи рівнянь методом Гауса з вибором головного елемента.'
+print 'Автор - Богдан Калінін'
 print "-" * 83
 Output(MainElement(AttachMatrixs(InputA(), InputB())))

@@ -112,6 +112,7 @@ def Solve(A,B):
 def Zeidel():
   print "-" * 83
   print 'Програма розв’язку системи рівнянь методом Гауса-Зейделя.'
+  print 'Автор - Богдан Калінін'
   print "-" * 83
   Solve(InputA(), InputB())
 

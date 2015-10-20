@@ -73,6 +73,7 @@ def ReverseCourse(C):
 def ConsistentExeptions():
   print "-" * 83
   print 'Програма розв’язку системи рівнянь методом Гауса з послідовним виключенням змінних.'
+  print 'Автор - Богдан Калінін'
   print "-" * 83
   Output(ReverseCourse(NormalCourse(AttachMatrixs(InputA(), InputB()))))
 

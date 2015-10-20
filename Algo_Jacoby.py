@@ -102,6 +102,7 @@ def Solve(A,B):
 def Jacoby():
   print "-" * 83
   print 'Програма розв’язку системи рівнянь методом Джакобі.'
+  print 'Автор - Богдан Калінін'
   print "-" * 83
   Solve(InputA(), InputB())
 

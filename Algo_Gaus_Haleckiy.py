@@ -68,5 +68,6 @@ def Output(X):
 
 print "-" * 83
 print 'Програма розв’язку системи рівнянь методом Гауса-Халецького.'
+print 'Автор - Богдан Калінін'
 print "-" * 83
 GausHaleckiy(InputA(), InputB())
