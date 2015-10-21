@@ -37,7 +37,7 @@ def FirstNorme(A):
   for i in range(len(A)):
     S = 0
     for j in range(len(A)):
-      S += math.fabs(float(A[i][j]))
+      S += math.fabs(A[i][j])
     tepm.append(S)
   return max(tepm)
 
